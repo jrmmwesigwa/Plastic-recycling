@@ -1,0 +1,325 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Products - EcoCycle Solutions</title>
+  <meta name="description" content="Explore our range of recycled plastic products and materials">
+  <meta name="author" content="EcoCycle Solutions">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <div class="logo">
+        <h1>EcoCycle Solutions</h1>
+      </div>
+      <nav>
+        <ul class="desktop-menu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="products.html" class="active">Products</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <div class="mobile-menu-toggle">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <ul class="mobile-menu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="products.html" class="active">Products</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-header eco-gradient">
+      <div class="container">
+        <h1>Our Products</h1>
+        <p>High-quality recycled materials and eco-friendly plastic products</p>
+      </div>
+    </section>
+
+    <section class="product-filters section-padding">
+      <div class="container">
+        <div class="filter-container">
+          <div class="filter-group">
+            <label for="category-filter">Category:</label>
+            <select id="category-filter" class="filter-select">
+              <option value="all">All Categories</option>
+              <option value="raw-materials">Raw Materials</option>
+              <option value="consumer-goods">Consumer Goods</option>
+              <option value="industrial">Industrial Applications</option>
+              <option value="construction">Construction Materials</option>
+            </select>
+          </div>
+          
+          <div class="filter-group">
+            <label for="plastic-type-filter">Plastic Type:</label>
+            <select id="plastic-type-filter" class="filter-select">
+              <option value="all">All Types</option>
+              <option value="pet">PET (1)</option>
+              <option value="hdpe">HDPE (2)</option>
+              <option value="pvc">PVC (3)</option>
+              <option value="ldpe">LDPE (4)</option>
+              <option value="pp">PP (5)</option>
+              <option value="ps">PS (6)</option>
+              <option value="mixed">Mixed Plastics</option>
+            </select>
+          </div>
+          
+          <div class="filter-group">
+            <label for="price-filter">Price Range:</label>
+            <select id="price-filter" class="filter-select">
+              <option value="all">All Prices</option>
+              <option value="low">$0 - $50</option>
+              <option value="medium">$51 - $200</option>
+              <option value="high">$201+</option>
+            </select>
+          </div>
+          
+          <button id="filter-button" class="eco-button-secondary">Apply Filters</button>
+          <button id="reset-button" class="eco-button-outline">Reset</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="products-grid section-padding">
+      <div class="container">
+        <div class="products-container">
+          <div class="product-card" data-category="raw-materials" data-type="pet" data-price="medium">
+            <div class="product-image">
+              <!-- Image will be added by user -->
+            </div>
+            <div class="product-details">
+              <h3>Recycled PET Flakes</h3>
+              <p class="product-description">High-quality recycled PET flakes for various applications, including textile production and packaging.</p>
+              <p class="product-metadata">Type: PET (1) | Purity: 99.5%</p>
+              <div class="product-price-container">
+                <p class="product-price">$120.00 per ton</p>
+                <button class="add-to-cart eco-button-outline">Add to Cart</button>
+              </div>
+            </div>
+          </div>
+          
+          <div class="product-card" data-category="raw-materials" data-type="hdpe" data-price="medium">
+            <div class="product-image">
+              <!-- Image will be added by user -->
+            </div>
+            <div class="product-details">
+              <h3>HDPE Pellets</h3>
+              <p class="product-description">Premium recycled HDPE pellets suitable for injection molding and various manufacturing processes.</p>
+              <p class="product-metadata">Type: HDPE (2) | Color: Mixed</p>
+              <div class="product-price-container">
+                <p class="product-price">$150.00 per ton</p>
+                <button class="add-to-cart eco-button-outline">Add to Cart</button>
+              </div>
+            </div>
+          </div>
+          
+          <div class="product-card" data-category="consumer-goods" data-type="hdpe" data-price="low">
+            <div class="product-image">
+              <!-- Image will be added by user -->
+            </div>
+            <div class="product-details">
+              <h3>Recycled Plastic Planters</h3>
+              <p class="product-description">Durable and eco-friendly planters made from 100% recycled HDPE plastic, available in various sizes and colors.</p>
+              <p class="product-metadata">Material: HDPE | Sizes: Small, Medium, Large</p>
+              <div class="product-price-container">
+                <p class="product-price">$15.99 - $45.99</p>
+                <button class="add-to-cart eco-button-outline">Add to Cart</button>
+              </div>
+            </div>
+          </div>
+          
+          <div class="product-card" data-category="consumer-goods" data-type="pet" data-price="low">
+            <div class="product-image">
+              <!-- Image will be added by user -->
+            </div>
+            <div class="product-details">
+              <h3>Eco-Friendly Water Bottles</h3>
+              <p class="product-description">Reusable water bottles made from recycled PET plastic, helping reduce single-use plastic waste.</p>
+              <p class="product-metadata">Material: rPET | Capacity: 750ml</p>
+              <div class="product-price-container">
+                <p class="product-price">$12.99</p>
+                <button class="add-to-cart eco-button-outline">Add to Cart</button>
+              </div>
+            </div>
+          </div>
+          
+          <div class="product-card" data-category="construction" data-type="mixed" data-price="high">
+            <div class="product-image">
+              <!-- Image will be added by user -->
+            </div>
+            <div class="product-details">
+              <h3>Plastic Lumber</h3>
+              <p class="product-description">Durable alternative to traditional wood, made from recycled mixed plastics. Resistant to moisture, rot, and insects.</p>
+              <p class="product-metadata">Material: Mixed Plastics | Dimensions: Various</p>
+              <div class="product-price-container">
+                <p class="product-price">$250.00 per cubic meter</p>
+                <button class="add-to-cart eco-button-outline">Add to Cart</button>
+              </div>
+            </div>
+          </div>
+          
+          <div class="product-card" data-category="industrial" data-type="ldpe" data-price="medium">
+            <div class="product-image">
+              <!-- Image will be added by user -->
+            </div>
+            <div class="product-details">
+              <h3>Recycled Plastic Pallets</h3>
+              <p class="product-description">Durable and lightweight logistics pallets made from recycled LDPE plastic. Hygienic and reusable.</p>
+              <p class="product-metadata">Material: LDPE | Capacity: 1,500kg</p>
+              <div class="product-price-container">
+                <p class="product-price">$85.99</p>
+                <button class="add-to-cart eco-button-outline">Add to Cart</button>
+              </div>
+            </div>
+          </div>
+          
+          <div class="product-card" data-category="construction" data-type="pvc" data-price="medium">
+            <div class="product-image">
+              <!-- Image will be added by user -->
+            </div>
+            <div class="product-details">
+              <h3>Recycled PVC Pipes</h3>
+              <p class="product-description">Eco-friendly plumbing solutions made from recycled PVC. Durable and cost-effective.</p>
+              <p class="product-metadata">Material: PVC | Dimensions: Various</p>
+              <div class="product-price-container">
+                <p class="product-price">$120.00 - $180.00</p>
+                <button class="add-to-cart eco-button-outline">Add to Cart</button>
+              </div>
+            </div>
+          </div>
+          
+          <div class="product-card" data-category="consumer-goods" data-type="pp" data-price="low">
+            <div class="product-image">
+              <!-- Image will be added by user -->
+            </div>
+            <div class="product-details">
+              <h3>Recycled Food Containers</h3>
+              <p class="product-description">Food-safe storage containers made from recycled PP plastic. Microwave and dishwasher safe.</p>
+              <p class="product-metadata">Material: PP | Set of 5</p>
+              <div class="product-price-container">
+                <p class="product-price">$24.99</p>
+                <button class="add-to-cart eco-button-outline">Add to Cart</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="bulk-orders section-padding eco-gradient">
+      <div class="container">
+        <div class="bulk-content">
+          <h2>Bulk Orders & Custom Solutions</h2>
+          <p>Looking for larger quantities or custom recycled plastic products? Contact our sales team to discuss your specific requirements and get a personalized quote.</p>
+          <a href="contact.html" class="eco-button">Request a Quote</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta section-padding">
+      <div class="container">
+        <div class="cta-content">
+          <h2>Ready to make a purchase?</h2>
+          <p>Choose from our range of high-quality recycled plastic products and materials.</p>
+          <div class="payment-options">
+            <button id="mobileMoneyBtn" class="eco-button">Mobile Money Payment</button>
+            <button id="bankPaymentBtn" class="eco-button-secondary">Bank Transfer</button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <h3>EcoCycle Solutions</h3>
+          <p>Transforming plastic waste into valuable resources with innovative recycling solutions.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Contact Us</h4>
+          <p>123 Recycling Way, Green City</p>
+          <p>Phone: (123) 456-7890</p>
+          <p>Email: info@ecocyclesolutions.com</p>
+        </div>
+        <div class="footer-col">
+          <h4>Follow Us</h4>
+          <div class="social-icons">
+            <a href="#" class="social-icon">FB</a>
+            <a href="#" class="social-icon">TW</a>
+            <a href="#" class="social-icon">IG</a>
+            <a href="#" class="social-icon">LI</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2023 EcoCycle Solutions. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Mobile Money Dialog -->
+  <div id="mobileMoneyDialog" class="dialog">
+    <div class="dialog-content">
+      <div class="dialog-header">
+        <h2>Mobile Money Payment</h2>
+        <button class="close-button">&times;</button>
+      </div>
+      <div class="dialog-body">
+        <form id="mobileMoneyForm">
+          <div class="form-group">
+            <label for="phoneNumber">Phone Number</label>
+            <input type="text" id="phoneNumber" placeholder="Enter your mobile money number" required>
+          </div>
+          <div class="form-group">
+            <label for="service">Select Service</label>
+            <select id="service" required>
+              <option value="">Select a service</option>
+              <option value="plastic-collection">Plastic Collection</option>
+              <option value="plastic-processing">Plastic Processing</option>
+              <option value="corporate-program">Corporate Recycling Program</option>
+              <option value="community-program">Community Recycling Program</option>
+            </select>
+          </div>
+          <div class="dialog-footer">
+            <button type="button" class="cancel-button">Cancel</button>
+            <button type="submit" class="submit-button">Proceed to Payment</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.gpteng.co/gptengineer.js" type="module"></script>
+  <script src="script.js"></script>
+</body>
+</html>
