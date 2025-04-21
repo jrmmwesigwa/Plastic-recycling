@@ -4,11 +4,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>EcoCycle Solutions - Plastic Recycling</title>
+  <title>Plastic solution Enterprises - Plastic Recycling</title>
   <meta name="description" content="Leading plastic recycling company with innovative solutions for a cleaner future">
-  <meta name="author" content="EcoCycle Solutions">
+  <meta name="author" content="Plastic solution Enterprises">
   
-  <meta property="og:title" content="EcoCycle Solutions - Plastic Recycling">
+  <meta property="og:title" content="Plastic solution Enterprises - Plastic Recycling">
   <meta property="og:description" content="Leading plastic recycling company with innovative solutions for a cleaner future">
   <meta property="og:type" content="website">
   <meta property="og:image" content="https://lovable.dev/opengraph-image-p98pqg.png">
@@ -26,7 +26,7 @@
   <header>
     <div class="container">
       <div class="logo">
-        <h1>EcoCycle Solutions</h1>
+        <h1>Plastic solution Enterprises</h1>
       </div>
       <nav>
         <ul class="desktop-menu">
@@ -37,6 +37,10 @@
           <li><a href="faq.html">FAQ</a></li>
           <li><a href="contact.html">Contact</a></li>
         </ul>
+        <div class="cart-icon">
+          <span class="cart-count">0</span>
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="8" cy="21" r="1"></circle><circle cx="19" cy="21" r="1"></circle><path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"></path></svg>
+        </div>
         <div class="mobile-menu-toggle">
           <span></span>
           <span></span>
@@ -75,28 +79,65 @@
 
     <section class="features section-padding">
       <div class="container">
-        <h2 class="section-title">Why Choose EcoCycle Solutions?</h2>
+        <h2 class="section-title">Why Choose Plastic solution Enterprises?</h2>
         <div class="features-grid">
           <div class="feature-card animate-scale-up">
-            <div class="feature-icon">
-              <!-- Icon will be added by user -->
-            </div>
+            
             <h3>Sustainable Processes</h3>
             <p>Our recycling methods are designed to minimize environmental impact while maximizing resource recovery.</p>
           </div>
           <div class="feature-card animate-scale-up">
-            <div class="feature-icon">
-              <!-- Icon will be added by user -->
-            </div>
+            
             <h3>Advanced Technology</h3>
             <p>We employ cutting-edge sorting and processing technologies to handle various plastic types efficiently.</p>
           </div>
           <div class="feature-card animate-scale-up">
-            <div class="feature-icon">
-              <!-- Icon will be added by user -->
-            </div>
+            
             <h3>Community Impact</h3>
             <p>Our initiatives create local jobs and educate communities about sustainable waste management practices.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="sustainability-calculator section-padding">
+      <div class="container">
+        <h2 class="section-title">Sustainability Calculator</h2>
+        <p class="section-description">See the environmental impact of your recycling efforts with our calculator.</p>
+        
+        <div class="calculator-container">
+          <div class="calculator-form">
+            <div class="form-group">
+              <label for="plastic-weight">Plastic Weight (kg)</label>
+              <input type="number" id="plastic-weight" min="0" value="0" step="0.5">
+            </div>
+            <div class="form-group">
+              <label for="plastic-type">Plastic Type</label>
+              <select id="plastic-type">
+                <option value="pet">PET (Type 1)</option>
+                <option value="hdpe">HDPE (Type 2)</option>
+                <option value="pvc">PVC (Type 3)</option>
+                <option value="ldpe">LDPE (Type 4)</option>
+                <option value="pp">PP (Type 5)</option>
+                <option value="ps">PS (Type 6)</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+            <button id="calculate-btn" class="eco-button">Calculate Impact</button>
+          </div>
+          <div class="calculator-results">
+            <div class="result-item">
+              <h4>CO₂ Saved</h4>
+              <p id="co2-saved">0 kg</p>
+            </div>
+            <div class="result-item">
+              <h4>Energy Saved</h4>
+              <p id="energy-saved">0 kWh</p>
+            </div>
+            <div class="result-item">
+              <h4>Water Saved</h4>
+              <p id="water-saved">0 liters</p>
+            </div>
           </div>
         </div>
       </div>
@@ -106,19 +147,19 @@
       <div class="container">
         <div class="stats-grid">
           <div class="stat-item">
-            <h3>10,000+</h3>
+            <h3>1,000+</h3>
             <p>Tons of Plastic Recycled</p>
           </div>
           <div class="stat-item">
-            <h3>500+</h3>
+            <h3>10+</h3>
             <p>Business Partners</p>
           </div>
           <div class="stat-item">
-            <h3>15+</h3>
+            <h3>5+</h3>
             <p>Years of Experience</p>
           </div>
           <div class="stat-item">
-            <h3>20,000+</h3>
+            <h3>1,000+</h3>
             <p>Trees Saved</p>
           </div>
         </div>
@@ -143,7 +184,7 @@
     <div class="container">
       <div class="footer-grid">
         <div class="footer-col">
-          <h3>EcoCycle Solutions</h3>
+          <h3>Plastic solution Enterprises</h3>
           <p>Transforming plastic waste into valuable resources with innovative recycling solutions.</p>
         </div>
         <div class="footer-col">
@@ -159,22 +200,38 @@
         </div>
         <div class="footer-col">
           <h4>Contact Us</h4>
-          <p>123 Recycling Way, Green City</p>
-          <p>Phone: (123) 456-7890</p>
-          <p>Email: info@ecocyclesolutions.com</p>
+          <p>P.O Box 1148 kampala</p>
+          <p>Phone: 0740915824 <br><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> 0782427661</p>
+          <p>Email: atukwasechristine33@gmail.com</p>
         </div>
         <div class="footer-col">
           <h4>Follow Us</h4>
           <div class="social-icons">
-            <a href="#" class="social-icon">FB</a>
-            <a href="#" class="social-icon">TW</a>
-            <a href="#" class="social-icon">IG</a>
-            <a href="#" class="social-icon">LI</a>
+            <a href="#" class="social-icon" title="Facebook" aria-label="Facebook" target="_blank" rel="noopener noreferrer">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#3b5998" viewBox="0 0 24 24">
+                <path d="M22.675 0h-21.35C.593 0 0 .593 0 1.326v21.348C0 23.406.593 24 1.325 24H12.82v-9.294H9.691v-3.622h3.129V8.413c0-3.1 1.894-4.788 4.659-4.788 1.325 0 2.466.099 2.797.142v3.24l-1.918.001c-1.504 0-1.796.715-1.796 1.763v2.312h3.587l-.467 3.622h-3.12V24h6.116c.73 0 1.324-.593 1.324-1.326V1.326C24 .593 23.406 0 22.675 0z" />
+              </svg>
+            </a>
+            <a href="#" class="social-icon" title="Twitter" aria-label="Twitter" target="_blank" rel="noopener noreferrer">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#1da1f2" viewBox="0 0 24 24">
+                <path d="M23.954 4.569c-.885.389-1.83.654-2.825.775a4.96 4.96 0 0 0 2.163-2.724 9.865 9.865 0 0 1-3.127 1.195 4.924 4.924 0 0 0-8.384 4.483A13.978 13.978 0 0 1 1.671 3.149a4.902 4.902 0 0 0-.666 2.475c0 1.708.87 3.213 2.188 4.096a4.904 4.904 0 0 1-2.229-.616v.061a4.925 4.925 0 0 0 3.946 4.827 4.904 4.904 0 0 1-2.224.085 4.937 4.937 0 0 0 4.604 3.416 9.867 9.867 0 0 1-6.102 2.104c-.395 0-.787-.023-1.175-.069a13.945 13.945 0 0 0 7.557 2.209c9.054 0 14-7.497 14-13.986 0-.21 0-.423-.015-.633A9.936 9.936 0 0 0 24 4.59z" />
+              </svg>
+            </a>
+            <a href="#" class="social-icon" title="Instagram" aria-label="Instagram" target="_blank" rel="noopener noreferrer">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#e4405f" viewBox="0 0 24 24">
+                <path d="M7.75 2h8.5A5.75 5.75 0 0 1 22 7.75v8.5A5.75 5.75 0 0 1 16.25 22h-8.5A5.75 5.75 0 0 1 2 16.25v-8.5A5.75 5.75 0 0 1 7.75 2zm0 1.5A4.25 4.25 0 0 0 3.5 7.75v8.5A4.25 4.25 0 0 0 7.75 20.5h8.5a4.25 4.25 0 0 0 4.25-4.25v-8.5a4.25 4.25 0 0 0-4.25-4.25h-8.5zm8.88 3.28a1.12 1.12 0 1 1 0 2.24 1.12 1.12 0 0 1 0-2.24zM12 7a5 5 0 1 1 0 10 5 5 0 0 1 0-10zm0 1.5a3.5 3.5 0 1 0 0 7 3.5 3.5 0 0 0 0-7z" />
+              </svg>
+            </a>
+            <a href="#" class="social-icon" title="LinkedIn" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#0077b5" viewBox="0 0 24 24">
+                <path d="M4.98 3.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zM4 8.5h2v10H4v-10zm7.5 0h2.04v1.5h.03c.28-.54.89-1.1 1.83-1.1 1.96 0 2.32 1.3 2.32 2.98v5.62h-2v-5c0-1.2-.02-2.74-1.67-2.74-1.68 0-1.93 1.3-1.93 2.64v5.1h-2v-10z" />
+              </svg>
+            </a>
           </div>
         </div>
       </div>
       <div class="footer-bottom">
-        <p>&copy; 2023 EcoCycle Solutions. All rights reserved.</p>
+        <p>&copy; 2023 Plastic solution Enterprises. All rights reserved.</p>
       </div>
     </div>
   </footer>
@@ -193,9 +250,9 @@
             <input type="text" id="phoneNumber" placeholder="Enter your mobile money number" required>
           </div>
           <div class="form-group">
-            <label for="service">Select Service</label>
+            <label for="service">Service/Product</label>
             <select id="service" required>
-              <option value="">Select a service</option>
+              <option value="cart-payment">Cart Payment</option>
               <option value="plastic-collection">Plastic Collection</option>
               <option value="plastic-processing">Plastic Processing</option>
               <option value="corporate-program">Corporate Recycling Program</option>
@@ -203,15 +260,37 @@
             </select>
           </div>
           <div class="dialog-footer">
-            <button type="button" class="cancel-button">Cancel</button>
-            <button type="submit" class="submit-button">Proceed to Payment</button>
+            <button type="button" class="cancel-button eco-button-outline">Cancel</button>
+            <button type="submit" class="submit-button eco-button">Confirm Payment</button>
           </div>
         </form>
       </div>
     </div>
   </div>
 
-  <script src="https://cdn.gpteng.co/gptengineer.js" type="module"></script>
+  <!-- Cart Dialog -->
+  <div id="cartDialog" class="dialog">
+    <div class="dialog-content">
+      <div class="dialog-header">
+        <h2>Your Cart</h2>
+        <button class="close-button">&times;</button>
+      </div>
+      <div class="dialog-body">
+        <div id="cart-items" class="cart-items">
+          <!-- Cart items will be added here dynamically -->
+          <p class="empty-cart-message">Your cart is empty.</p>
+        </div>
+        <div class="cart-summary">
+          <div class="cart-total">
+            <span>Total:</span>
+            <span id="cart-total-amount">UGX 0.00</span>
+          </div>
+          <button id="checkout-btn" class="eco-button" disabled>Proceed to Checkout</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <script src="script.js"></script>
 </body>
 </html>
